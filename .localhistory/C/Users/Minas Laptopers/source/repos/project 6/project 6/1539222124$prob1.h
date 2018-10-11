@@ -44,7 +44,7 @@ void totalLargeShirts() {
 void totalBlack() {
 	_asm {
 		mov ebx, 0;
-		lea esi, a;
+		lea esi, 0;
 		mov counter, 0;
 		add esi, 32;
 	loop1:
@@ -57,7 +57,6 @@ void totalBlack() {
 	display:
 		mov total_black, ebx;
 	}
-	std::cout << "total black shirts: [ " << total_black << " ]." << std::endl;
 }
 
 #endif // !prob1_h

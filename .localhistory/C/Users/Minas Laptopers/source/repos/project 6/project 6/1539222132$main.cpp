@@ -3,7 +3,6 @@
 int main() {
 	totalShirts();
 	totalLargeShirts();
-	totalBlack();
 	system("pause");
 	return 0;
 }

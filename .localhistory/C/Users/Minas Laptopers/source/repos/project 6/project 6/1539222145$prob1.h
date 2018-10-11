@@ -44,7 +44,7 @@ void totalLargeShirts() {
 void totalBlack() {
 	_asm {
 		mov ebx, 0;
-		lea esi, a;
+		lea esi, 0;
 		mov counter, 0;
 		add esi, 32;
 	loop1:

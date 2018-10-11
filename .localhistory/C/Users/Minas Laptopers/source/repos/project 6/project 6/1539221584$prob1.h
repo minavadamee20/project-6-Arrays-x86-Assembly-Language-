@@ -27,37 +27,9 @@ void totalLargeShirts() {
 		mov ebx, 0;
 		lea esi, a;
 		mov counter, 0;
-		add esi, 8;
-	loop2: 
+	loop1: 
 		cmp counter, 4;
-		Je display;
-		add ebx, [esi];
-		add esi, 16;
-		inc counter;
-		Jmp loop2;
-	display:
-		mov total_large, ebx;
 	}
-	std::cout << "total amount of large shirts: [ " << total_large << " ]." << std::endl;
-}
-
-void totalBlack() {
-	_asm {
-		mov ebx, 0;
-		lea esi, a;
-		mov counter, 0;
-		add esi, 32;
-	loop1:
-		cmp counter, 4;
-		Je display;
-		add ebx, [esi];
-		add esi, 4;
-		inc counter;
-		Jmp loop1;
-	display:
-		mov total_black, ebx;
-	}
-	std::cout << "total black shirts: [ " << total_black << " ]." << std::endl;
 }
 
 #endif // !prob1_h
