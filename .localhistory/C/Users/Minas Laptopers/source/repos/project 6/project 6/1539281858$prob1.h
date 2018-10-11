@@ -11,45 +11,55 @@ void totalShirts() {
 		mov counter, 0;
 	loop1:
 		cmp counter, 16;
-		Je display1;
+		Je display;
 		add ebx, [esi];
 		add esi, 4;
 		inc counter;
 		Jmp loop1;
-	display1:
+	display:
 		mov total_shirts, ebx;
-	setUp2:
+	}
+	std::cout << "total amount of shirts: [ " << total_shirts << " ]." << std::endl;
+}//end totalShirts
+
+void totalLargeShirts() {
+	_asm {
 		mov ebx, 0;
 		lea esi, a;
 		mov counter, 0;
 		add esi, 8;
-	loopLarge: 
+	loop2: 
 		cmp counter, 4;
-		Je display2;
+		Je display;
 		add ebx, [esi];
 		add esi, 16;
 		inc counter;
-		Jmp loopLarge;
-	display2:
+		Jmp loop2;
+	display:
 		mov total_large, ebx;
-	setUp3:
+	}
+	std::cout << "total amount of large shirts: [ " << total_large << " ]." << std::endl;
+}//end of totalLargeShirts
+
+void totalBlack() {
+	_asm {
 		mov ebx, 0;
 		lea esi, a;
 		mov counter, 0;
 		add esi,48;
-	loop3:
+	loop1:
 		cmp counter, 4;
-		Je display3;
+		Je display;
 		add ebx, [esi];
 		add esi, 4;
 		inc counter;
-		Jmp loop3;
-	display3:
+		Jmp loop1;
+	display:
 		mov total_black, ebx;
-	}//end of asm
+	}
 	std::cout << "total amount of shirts: [ " << total_shirts << " ]." << std::endl;
-	std::cout << "total amount of large shirts: [ " << total_large << " ]." << std::endl;
+
 	std::cout << "total black shirts: [ " << total_black << " ]." << std::endl << std::endl << std::endl;
-}//end of prob1 function																						
+}//end of totalBlack
 
 #endif // !prob1_h

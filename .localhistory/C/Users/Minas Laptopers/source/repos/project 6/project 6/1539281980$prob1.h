@@ -18,7 +18,12 @@ void totalShirts() {
 		Jmp loop1;
 	display1:
 		mov total_shirts, ebx;
-	setUp2:
+	}
+
+}//end totalShirts
+
+void totalLargeShirts() {
+	_asm {
 		mov ebx, 0;
 		lea esi, a;
 		mov counter, 0;
@@ -37,13 +42,13 @@ void totalShirts() {
 		lea esi, a;
 		mov counter, 0;
 		add esi,48;
-	loop3:
+	loop1:
 		cmp counter, 4;
 		Je display3;
 		add ebx, [esi];
 		add esi, 4;
 		inc counter;
-		Jmp loop3;
+		Jmp loop1;
 	display3:
 		mov total_black, ebx;
 	}//end of asm
