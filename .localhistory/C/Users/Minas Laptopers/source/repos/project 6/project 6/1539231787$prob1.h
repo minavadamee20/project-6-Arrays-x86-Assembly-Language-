@@ -57,7 +57,7 @@ void totalBlack() {
 	display:
 		mov total_black, ebx;
 	}
-	std::cout << "total black shirts: [ " << total_black << " ]." << std::endl << std::endl << std::endl;
+	std::cout << "total black shirts: [ " << total_black << " ]." << std::endl;
 }//end of totalBlack
 
 #endif // !prob1_h

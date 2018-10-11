@@ -18,7 +18,7 @@
     <ClInclude Include="prob1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="prob3.h">
+    <ClInclude Include="prob2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

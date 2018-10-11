@@ -46,7 +46,7 @@ void totalBlack() {
 		mov ebx, 0;
 		lea esi, a;
 		mov counter, 0;
-		add esi,48;
+		add esi, 32;
 	loop1:
 		cmp counter, 4;
 		Je display;
@@ -57,7 +57,7 @@ void totalBlack() {
 	display:
 		mov total_black, ebx;
 	}
-	std::cout << "total black shirts: [ " << total_black << " ]." << std::endl << std::endl << std::endl;
+	std::cout << "total black shirts: [ " << total_black << " ]." << std::endl;
 }//end of totalBlack
 
 #endif // !prob1_h

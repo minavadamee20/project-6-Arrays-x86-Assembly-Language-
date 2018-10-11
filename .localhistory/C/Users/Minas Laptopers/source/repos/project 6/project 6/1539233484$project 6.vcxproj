@@ -116,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="prob1.h" />
-    <ClInclude Include="prob3.h" />
+    <ClInclude Include="prob2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
